@@ -6,9 +6,16 @@ body
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    background-color: blue;
     background-image: url(https://images.pexels.com/photos/1181244/pexels-photo-1181244.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
     background-repeat: none;
     background-attachment: fixed;
     background-size: cover;
 }
+.white
+{
+    color: white;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+}
+
