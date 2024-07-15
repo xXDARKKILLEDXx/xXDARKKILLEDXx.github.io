@@ -17,14 +17,14 @@ body
     width: 100%;
     height: 100%;
     grid-area: 1/1/6/6;
+
 }
 nav
 {
-    background-color: cyan;
-    width: 95%;
+    background-color: rgba(31, 26, 93, 0.863);
+    width: 100%;
     height: 30%;
-    border-radius: 20px;
-    margin-top: -65px;
+    margin-top: -135px;
     justify-self: center;
     align-self: center;
     justify-content: center;
@@ -37,19 +37,40 @@ nav ul
     list-style: none;
     display: flex;
     flex-direction: row;
-    gap: 30px;
+    gap: 120px;
 }
 nav ul li
 {
+    color: white;
     font-size: larger;
+    font-size: 150%;
     
 }
 main
 {
-    background-color: white;
+    margin-top: -110px;
+    margin-left: -50px;
+    width: 130%;
+    box-shadow: 5px 5px 15px rgb(0, 0, 0);
+    background-color: rgba(255, 255, 255, 0.751);
+    border-radius: 20px;
+    grid-area: 2/2/4/5;
 }
 .inicio
 {
-    background-color: blue;
+    color:white;
+    background-color: rgba(15, 15, 170, 0.868);
+    border-radius: 20px;
+    width: 92%;
+    margin-left: 20px;
+    grid-area: 2/3/2/3;
+}
+.educacion
+{
+
+}
+.proyectos
+{
+
 }
 
