@@ -1,86 +1,232 @@
-body
-{
-    width: 100vw;
-    height: 100vh;
+/* Reset de estilos por defecto del navegador */
+* {
     margin: 0;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    background-image: url(https://images.pexels.com/photos/1181244/pexels-photo-1181244.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
-    background-repeat: none;
-    background-attachment: fixed;
-    background-size: cover;
+    padding: 0;
+    box-sizing: border-box;
 }
-.white
-{
-    background-color: rgba(0, 0, 0, 0.482);
-    width: 100%;
-    height: 100%;
-    grid-area: 1/1/6/6;
 
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    text-align: center;
+    background-image: url(https://images.pexels.com/photos/6803551/pexels-photo-6803551.jpeg?auto=compress&cs=tinysrgb&w=600);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
-nav
-{
-    background-color: rgba(31, 26, 93, 0.863);
-    width: 100%;
-    height: 30%;
-    margin-top: -135px;
-    justify-self: center;
-    align-self: center;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    grid-area: 1/1/2/6;
+
+nav {
+    background-color: #333;
+    color: #ffffff7b;
+    padding: 10px 20px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
-nav ul
-{
+
+nav .menu-icon {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    color: #ffffff7b;
+}
+
+nav ul {
     list-style: none;
     display: flex;
-    flex-direction: row;
-    gap: 120px;
+    justify-content: center;
+    transition: max-height 0.3s ease;
 }
-nav ul li
-{
+
+nav ul li {
+    margin: 0 15px;
+    position: relative;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #f39c12;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropbtn::after {
+    content: ' ▼';
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    top: 100%;
+    left: 0;
+    right: 0;
+}
+
+.dropdown-content a {
     color: white;
-    font-size: larger;
-    font-size: 150%;
-    
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
 }
-main
-{
-    margin-top: -110px;
-    margin-left: -50px;
-    width: 130%;
-    box-shadow: 5px 5px 15px rgb(0, 0, 0);
-    background-color: rgba(255, 255, 255, 0.751);
-    border-radius: 20px;
-    grid-area: 2/2/4/5;
+
+.dropdown-content a:hover {
+    background-color: #575757;
 }
-.inicio
-{
-    color:white;
-    background-color: rgba(15, 15, 170, 0.868);
-    border-radius: 20px;
-    width: 92%;
-    margin-left: 20px;
-    grid-area: 2/3/2/3;
+
+.dropdown:hover .dropdown-content {
+    display: block;
 }
-.educacion
-{
-    color:white;
-    background-color: rgba(15, 15, 170, 0.868);
-    border-radius: 20px;
-    width: 92%;
-    margin-left: 20px;
-    margin-top: 20px;
-    grid-area: 2/4/2/4;
+
+main {
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffffc9;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
 }
-.educacion p,h2
-{
+
+.inicio, .educacion, .proyectos, .reconocimientos, .lenguajes {
+    margin-bottom: 30px;
+}
+
+h1, h2, h3 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+h1 {
+    border-bottom: 2px solid #333;
+    padding-bottom: 10px;
+}
+
+p, ul {
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style: disc;
+    padding-left: 20px;
+    text-align: left;
+    display: inline-block;
+}
+
+ul li {
+    margin-bottom: 5px;
+}
+
+footer {
+    text-align: center;
     padding: 10px;
+    background-color: #333;
+    color: #fff;
+    position: sticky;
+    bottom: 0;
 }
-.proyectos
-{
 
+footer p {
+    margin: 0;
 }
 
+/* Estilo específico para la barra blanca */
+.white {
+    height: 10px;
+    background-color: #fff;
+}
+
+/* Estilos para la imagen de perfil */
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+
+.profile-pic:hover {
+    transform: scale(1.1);
+}
+
+/* Colores adicionales y animaciones */
+h1, h2, h3 {
+    color: #2c3e50;
+}
+
+p, ul li {
+    color: #34495e;
+}
+
+nav {
+    background-color: #0b2b40;
+}
+
+nav ul li a {
+    color: #ecf0f1;
+}
+
+nav ul li a:hover {
+    color: #3498db;
+}
+
+/* Media queries para dispositivos móviles y tabletas */
+@media (max-width: 768px) {
+    nav .menu-icon {
+        display: block;
+    }
+
+    nav ul {
+        flex-direction: column;
+        max-height: 0;
+        overflow: hidden;
+    }
+
+    nav ul.showing {
+        max-height: 500px; /* Suficientemente grande para mostrar todos los elementos */
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    main {
+        padding: 10px;
+        margin: 10px;
+        max-width: 90%;
+    }
+
+    .profile-pic {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1, h2, h3 {
+        font-size: 1.5em;
+    }
+
+    p, ul {
+        font-size: 1em;
+    }
+
+    .profile-pic {
+        width: 80px;
+        height: 80px;
+    }
+}

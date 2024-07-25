@@ -1,54 +1,109 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css" >
+    <link rel="stylesheet" href="style.css">
     <title>Ing. Oscar Alvarado Flores</title>
-    
 </head>
-
 <body>
     <div class="white"></div>
     <nav>
+        <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
         <ul>
-        <li>PRESENTACIÓN</li>
-        <li>EDUCACIÓN</li>
-        <li>PROYECTOS</li>
+            <li><a href="#presentacion">PRESENTACIÓN</a></li>
+            <li><a href="#educacion">EDUCACIÓN</a></li>
+            <li class="dropdown">
+                <a href="#proyectos" class="dropbtn">PROYECTOS</a>
+                <div class="dropdown-content">
+                    <a href="#proyecto1">Proyecto 1</a>
+                    <a href="#proyecto2">Proyecto 2</a>
+                    <a href="#proyecto3">Proyecto 3</a>
+                </div>
+            </li>
         </ul>
     </nav>
     <main>
-        <div class="inicio">
-        <h1>¿Quién soy?</h1>
-        <p>Soy Oscar Alvaarado Flores, estudiante de la carrera de Ingenieria en Software en al Pólitecnica de Santa Rosa Jauregui.</p>
-        <h2>¿Qué quiero?</h2>
-        <p>Mi objetivo es producir soluciones de Software inovadoras para el entorno en el qué vivo, llevando a México al siguiente nivel
-            tecnología.
-        </p>
-        <h2>Habilidades</h2>
-        <p>Pensamiento creativo</p>
-        <p>Pensamiento lógico</p>
-        <p>Programación</p>
-        <p>Escritura creativa</p>
-        <p></p>
-        </div>
-        <div class="educacion">
-        <h2>PrepaCAV</h2>
-        <p>Academia especializada en artes visuales. Capacidad técnica para modelado y animación 3D, pulibcidad, illustración y guionismo</p>
-        <h2>University of Austin Texas</h2>
-        <p>Programa de intercambio internacional, aprendizaje de Java, Python y refinación del Inglés</p>
-        <h2>Pólitecnica de Santa Rosa Jauregui</h2>
-        <p>Actualmente cursando la carrera de Ingenieria en Software</p>
-        </div>
-        <div class="proyectos">
+        <section id="presentacion" class="inicio">
+            <img src="https://scontent-qro1-1.xx.fbcdn.net/v/t39.30808-1/395423147_1988551594838910_1806915668967047304_n.jpg?stp=dst-jpg_p200x200&_nc_cat=104&ccb=1-7&_nc_sid=0ecb9b&_nc_eui2=AeF_J6qETf4JbsUaTdCjNAJYgWqLUzDQN6WBaotTMNA3pXMbBZs0yZ_6vMxOj8Wx-encGDrPtwdXBZXbhzKINfSC&_nc_ohc=vskagPBJDvMQ7kNvgHpNKig&_nc_ht=scontent-qro1-1.xx&oh=00_AYCKdGAagiB6QEd2K1CeZTvD4xORpUq_09iLpxEeN2mDtg&oe=66A89CA5" alt="Foto de perfil de Oscar Alvarado Flores" class="profile-pic">
+            <h1>¿Quién soy?</h1>
+            <p>Soy Oscar Alvarado Flores, estudiante de la carrera de Ingeniería en Software en la Politécnica de Santa Rosa Jáuregui.</p>
+            <h2>¿Qué quiero?</h2>
+            <p>Mi objetivo es producir soluciones de Software innovadoras para el entorno en el que vivo, llevando a México al siguiente nivel en tecnología, de una manera unica y creativa</p>
+            <h2>Contacto</h2>
+            <p>Cel: (+52) 442-449-3730</p>
+            <p>Correo: oscar_3325@outlook.com</p>
+            <h2>Habilidades</h2>
+            <p>Pensamiento creativo</p>
+            <p>Pensamiento lógico</p>
+            <p>Pensamiento crítico</p>
+            <p>Programación</p>
+            <p>Escritura creativa</p>
+            <p>Storytelling</p>
+            <p>Aprendizaje rápido</p>
+            <h2>Idiomas</h2>
+            <p>Inglés C1 (certificado ITEP)</p>
+            <p>Español nativo</p>
+            <p>Alemán A1 (no certificado)</p>
+        </section>
+        <section id="educacion" class="educacion">
+            <h2>Educación</h2>
+            <h3>PrepaCAV</h3>
+            <p>Academia especializada en artes visuales. Capacidad técnica para modelado y animación 3D, publicidad, ilustración y guionismo.</p>
+            <h3>University of Austin Texas</h3>
+            <p>Programa de intercambio internacional, aprendizaje de Java, Python y refinación del Inglés.</p>
+            <h3>Politécnica de Santa Rosa Jáuregui</h3>
+            <p>Actualmente cursando la carrera de Ingeniería en Software.</p>
+        </section>
+        <section id="proyectos" class="proyectos">
+            <h2>Proyectos</h2>
             <ul>
-                <li></li>
-                <li></li>
-                <li></li>
+                <li id="proyecto1"><h2>Creación de 2 videojuegos en Unity</h2></li>
+                <p>Cree dos videojuegos utilizando el motor gráfico de Unity, uno en 2D y el otro en 3D. Explorando las diferentes carácteristicas que posee el programa.</p>
+                <li id="proyecto2"><h2>Redacción de un documento de investigación</h2></li>
+                <p>Durante mmi participación en un proyecto academico, realice toda la documentación legal y tecnica. Siendo estos aprovados y enviados para evaluación, saliendo altamente calificados</p>
+                <li id="proyecto3"><h2>Escritor freelance</h2></li>
+                <p>Autoplubico diversas novelas de mi autoría, siendo la más exitosa la que ha recabado hasta 10 mil lecturas durante el presente año. Así mismo he participado en diveras competencias sobre el arte literario </p>
+                <p></p>
             </ul>
-        </div>
+        </section>
+        <section class="reconocimientos">
+            <h2>Reconocimientos</h2>
+            <p>Certificado White Belt</p>
+            <p>Diplomado de Gamificación por parte de la UNAM</p>
+            <p>Programa de idiomas de la UT Austin</p>
+        </section>
+        <section class="lenguajes">
+            <h2>Lenguajes de programación</h2>
+            <p>C++</p>
+            <p>Java</p>
+            <p>C#</p>
+            <p>HTML</p>
+            <p>CSS</p>
+        </section>
     </main>
-    
-</body>
+    <footer>
+        <p>&copy; 2024 Oscar Alvarado Flores. Todos los derechos reservados.</p>
+    </footer>
 
+    <script>
+     
+       
+
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        function toggleMenu() {
+            var menu = document.querySelector('nav ul');
+            menu.classList.toggle('showing');
+        }
+        
+    </script>
+</body>
 </html>
